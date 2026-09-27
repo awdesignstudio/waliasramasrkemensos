@@ -58,7 +58,7 @@
 
     <div class="bg-amber-500 text-slate-950 font-bold text-[11px] sm:text-xs py-1.5 px-4 text-center border-b border-amber-600 shadow-sm flex items-center justify-center gap-2">
         <span>⚠️</span>
-        <span><strong>PORTAL EDUKASI MANDIRI (NON-RESMI):</strong> Disusun independen mengacu pada UU 20/2023, Perpres 11/2024, Permensos 1/2025, Permensos 5&6/2023, dan Permensos 7/2025. Bukan situs resmi Kementerian Sosial RI.</span>
+        <span><strong>PORTAL EDUKASI MANDIRI (NON-RESMI):</strong> Disusun independen mengacu pada UU 20/2023, Perpres 11/2024, Permensos 1/2025, Permensos 5&6/2023, dan Juknis Pembinaan Asrama Sekolah Rakyat. Bukan situs resmi Kementerian Sosial RI.</span>
     </div>
 
     <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-xl border-b border-slate-800">
@@ -77,7 +77,7 @@
 
             <div class="w-full md:w-72">
                 <div class="relative">
-                    <input type="text" id="global-search" oninput="handleSearch()" placeholder="Cari atasan langsung, struktur, gaji, permensos 1/2025..." class="w-full bg-slate-800 text-white text-xs rounded-xl pl-8 pr-3 py-2 border border-slate-700 focus:outline-none focus:border-sky-500 placeholder-slate-400">
+                    <input type="text" id="global-search" oninput="handleSearch()" placeholder="Cari gaji, cuti, permensos 1/2025..." class="w-full bg-slate-800 text-white text-xs rounded-xl pl-8 pr-3 py-2 border border-slate-700 focus:outline-none focus:border-sky-500 placeholder-slate-400">
                     <span class="absolute left-2.5 top-2 text-xs text-slate-400">🔍</span>
                 </div>
             </div>
@@ -86,7 +86,6 @@
         <nav class="bg-slate-950/90 border-t border-slate-800 px-2 sm:px-6 lg:px-8 py-2 overflow-x-auto no-scrollbar">
             <div class="max-w-7xl mx-auto flex space-x-1.5 sm:space-x-2 text-[11px] sm:text-xs font-semibold whitespace-nowrap">
                 <button onclick="switchTab('dashboard')" id="tab-dashboard" class="tab-btn active px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">📊 Dashboard</button>
-                <button onclick="switchTab('struktur-org')" id="tab-struktur-org" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🌳 Struktur Organisasi & Atasan</button>
                 <button onclick="switchTab('tugas-kewajiban')" id="tab-tugas-kewajiban" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">📋 Kewajiban & Rincian Tugas</button>
                 <button onclick="switchTab('kelas-jabatan')" id="tab-kelas-jabatan" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🏛️ Kelas Jabatan (Permensos 1/2025)</button>
                 <button onclick="switchTab('pegawai-baru')" id="tab-pegawai-baru" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🌱 Masa Kerja &lt; 1 Thn</button>
@@ -113,19 +112,19 @@
             <section class="bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 text-white p-5 sm:p-7 rounded-2xl shadow-md border border-slate-800">
                 <div class="max-w-3xl space-y-2.5">
                     <span class="px-2.5 py-0.5 bg-sky-500/20 text-sky-300 font-bold text-[10px] sm:text-xs rounded-full border border-sky-400/30">Ringkasan Sistemik Kepegawaian, Jabatan & Operasional PPPK</span>
-                    <h2 class="text-xl sm:text-2xl md:text-3xl font-black leading-tight">Landasan Hukum, Hak Finansial, Struktur Organisasi, dan Atasan Langsung Wali Asrama</h2>
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-black leading-tight">Landasan Hukum, Hak Finansial, dan Operasional Wali Asrama</h2>
                     <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        Infografis interaktif ini menyajikan referensi komprehensif mengenai **Struktur Organisasi & Atasan Langsung Wali Asrama**, rincian kewajiban pengasuhan, **Kelas Jabatan (Permensos No. 1 Tahun 2025)**, gaji pokok (Perpres 11/2024), Tukin Kemensos, skema hak cuti (Perba BKN 7/2022), serta standar operasional pengawasan anak didik 24/7 di UPT Sekolah Rakyat.
+                        Infografis interaktif ini menyajikan referensi komprehensif mengenai rincian kewajiban pengasuhan, **Kelas Jabatan (Permensos No. 1 Tahun 2025)**, gaji pokok (Perpres 11/2024), Tukin Kemensos, skema hak cuti (Perba BKN 7/2022), serta standar operasional pengawasan anak didik 24/7 di UPT Sekolah Rakyat berdasarkan Juknis resmi.
                     </p>
                 </div>
             </section>
 
             <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                 <div class="bg-white rounded-xl p-3.5 sm:p-4 shadow-sm border-l-4 border-amber-500 border-y border-r border-slate-200">
-                    <p class="text-[10px] sm:text-[11px] uppercase font-bold text-slate-500">Atasan Langsung Anda</p>
-                    <h3 class="text-base sm:text-lg font-black text-slate-900 mt-1">Kasubag TU / Katim Operasional</h3>
-                    <p class="text-[11px] text-amber-700 font-semibold mt-0.5">Penilai SKP & Izinkan Cuti</p>
-                    <p class="text-[9px] sm:text-[10px] text-slate-400 mt-2 border-t pt-1">SOTK UPT SR • Permensos 7/2025</p>
+                    <p class="text-[10px] sm:text-[11px] uppercase font-bold text-slate-500">Kedudukan Struktural</p>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 mt-1">Kepala Sekolah</h3>
+                    <p class="text-[11px] text-amber-700 font-semibold mt-0.5">Koordinator UPT Sekolah Rakyat</p>
+                    <p class="text-[9px] sm:text-[10px] text-slate-400 mt-2 border-t pt-1">Sesuai Juknis Pembinaan Asrama</p>
                 </div>
 
                 <div class="bg-white rounded-xl p-3.5 sm:p-4 shadow-sm border-l-4 border-sky-600 border-y border-r border-slate-200">
@@ -150,26 +149,13 @@
                 </div>
             </section>
 
-            <section class="bg-amber-50 rounded-2xl p-4 sm:p-5 border border-amber-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="space-y-1 text-xs">
-                    <span class="px-2 py-0.5 bg-amber-200 text-amber-900 font-bold rounded text-[10px]">📌 FITUR BARU PENJELASAN HIERARKI</span>
-                    <h3 class="text-sm sm:text-base font-bold text-amber-950">Siapa Atasan Langsung Wali Asrama dalam Struktur Organisasi?</h3>
-                    <p class="text-slate-700 leading-relaxed">
-                        Wali Asrama (PPPK Gol IX - Class 7) berada langsung di bawah koordinasi <strong>Kasubag Tata Usaha / Ketua Tim Kerja Layanan & Operasional UPT</strong>, dan bertanggung jawab penuh kepada <strong>Kepala UPT Sekolah Rakyat</strong>.
-                    </p>
-                </div>
-                <button onclick="switchTab('struktur-org')" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs rounded-xl shadow transition whitespace-nowrap">
-                    Lihat Chart Organisasi Complete →
-                </button>
-            </section>
-
             <section class="bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-slate-200 space-y-4">
                 <div class="border-b border-slate-200 pb-3">
                     <h3 class="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2">
-                        <span>⚖️</span> Landasan Hukum & Regulasi Acuan Utama (4 Sumber Regulasi Kemensos)
+                        <span>⚖️</span> Landasan Hukum & Regulasi Acuan Utama
                     </h3>
                     <p class="text-xs text-slate-600 mt-1">
-                        Seluruh kebijakan struktur kedudukan, tugas pokok, kewajiban pengasuhan, hak finansial, penetapan kelas jabatan, dan disiplin bertumpu pada peraturan berikut:
+                        Seluruh kebijakan tugas pokok, kewajiban pengasuhan, hak finansial, penetapan kelas jabatan, dan disiplin bertumpu pada peraturan berikut:
                     </p>
                 </div>
 
@@ -183,13 +169,13 @@
                     <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
                         <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 font-bold rounded text-[10px]">Pembaruan Kelas Jabatan</span>
                         <h4 class="font-bold text-slate-900">Permensos No. 1 Tahun 2025</h4>
-                        <p class="text-slate-600">Perubahan atas Permensos 3/2023 tentang Jabatan & Kelas Jabatan Pegawai di Kemensos, penetapan jenjang fungsional & pelaksana, serta ketentuan penyesuaian kualifikasi 5 tahun (Pasal 7).</p>
+                        <p class="text-slate-600">Perubahan atas Permensos 3/2023 tentang Jabatan & Kelas Jabatan Pegawai di Kemensos, penetapan jenjang fungsional & pelaksana.</p>
                     </div>
 
                     <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
-                        <span class="px-2 py-0.5 bg-teal-100 text-teal-800 font-bold rounded text-[10px]">UPT Sekolah Rakyat & SOTK</span>
-                        <h4 class="font-bold text-slate-900">Inpres 8/2025 & Permensos 7/2025</h4>
-                        <p class="text-slate-600">Mandat pembentukan UPT Sekolah Rakyat berasrama penuh, SOTK pengawasan anak miskin ekstrem, tata hubungan kerja, dan rincian tugas Wali Asrama.</p>
+                        <span class="px-2 py-0.5 bg-teal-100 text-teal-800 font-bold rounded text-[10px]">Petunjuk Teknis Pembinaan</span>
+                        <h4 class="font-bold text-slate-900">Juknis Asrama Sekolah Rakyat</h4>
+                        <p class="text-slate-600">Mandat operasional pengasuhan, pembagian jadwal kegiatan, pola koordinasi, tata tertib, dan rincian tugas antara Wali Asrama dan Wali Asuh.</p>
                     </div>
 
                     <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
@@ -201,165 +187,14 @@
             </section>
         </div>
 
-        <div id="page-struktur-org" class="page-section space-y-6">
-            <section class="bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-slate-200 space-y-6">
-                <div class="border-b border-slate-200 pb-3">
-                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2">
-                        <span>🌳</span> Struktur Organisasi & Line of Command UPT Sekolah Rakyat
-                    </h2>
-                    <p class="text-xs text-slate-600 mt-1">
-                        Berdasarkan <strong>Permensos No. 7 Tahun 2025</strong> tentang SOTK UPT Sekolah Rakyat Kemensos, berikut adalah hirarki garis komando resmi yang memperjelas posisi, atasan langsung, bawahan, serta alur pelaporan Wali Asrama.
-                    </p>
-                </div>
-
-                <div class="bg-slate-900 text-white p-4 sm:p-6 rounded-2xl space-y-6 shadow-lg">
-                    <div class="text-center space-y-1">
-                        <span class="px-3 py-1 bg-amber-500/20 text-amber-300 font-bold text-xs rounded-full border border-amber-500/30 uppercase tracking-widest">DIAGRAM HIRARKI KEPEMIMPINAN UPT SR</span>
-                        <h3 class="text-base sm:text-lg font-black text-white">Bagan Komando & Kedudukan Wali Asrama</h3>
-                    </div>
-
-                    <div class="flex flex-col items-center space-y-5 text-xs">
-                        
-                        <div class="w-full max-w-md bg-gradient-to-r from-purple-900 to-slate-800 pt-6 pb-4 px-4 rounded-2xl border-2 border-purple-500/50 text-center shadow-md relative">
-                            <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider whitespace-nowrap shadow">Pimpinan Puncak UPT</span>
-                            <div class="font-black text-sm sm:text-base text-purple-200 mt-1">KEPALA UPT SEKOLAH RAKYAT</div>
-                            <div class="text-[11px] text-slate-300 font-medium mt-0.5">Eselon III / Jabatan Administrator (Kelas Jabatan 13 - 15)</div>
-                            <div class="mt-2.5 pt-2 border-t border-purple-800/80 text-[10px] text-purple-300 flex justify-center gap-3">
-                                <span>• Pejabat Pembina Kepegawaian UPT</span>
-                                <span>• Atasan Banding SKP</span>
-                            </div>
-                        </div>
-
-                        <div class="text-amber-400 font-black text-xl">↓</div>
-
-                        <div class="w-full max-w-md bg-gradient-to-r from-amber-950 via-amber-900 to-slate-800 pt-7 pb-5 px-4 rounded-2xl border-2 border-amber-400 text-center shadow-lg relative ring-4 ring-amber-500/20">
-                            <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-amber-500 text-slate-950 px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider shadow whitespace-nowrap">⚡ ATASAN LANGSUNG WALI ASRAMA</span>
-                            <div class="font-black text-base sm:text-lg text-amber-200 mt-2 leading-snug">KASUBAG TATA USAHA / KETUA TIM OPERASIONAL</div>
-                            <div class="text-[11px] text-amber-100 font-medium mt-1">Eselon IV / Ketua Tim Kerja Sub-Kelompok Layanan (Kelas Jabatan 10 - 11)</div>
-                            <div class="mt-3 pt-2.5 border-t border-amber-700/60 text-[11px] text-amber-200 space-y-1 text-left bg-amber-950/60 p-2.5 rounded-lg">
-                              <div class="font-bold text-amber-300 flex items-center gap-1"><span>🎯</span> Peran Utama Atasan Langsung:</div>
-                                <ul class="list-disc pl-4 ml-1 text-[10px] text-amber-100/90 space-y-0.5">
-                                    <li>Pejabat Penilai SKP & Kinerja Harian e-Kinerja Wali Asrama.</li>
-                                    <li>Pemberi Persetujuan/Verifikator Pengajuan Cuti (Tahunan, Sakit, CAP).</li>
-                                    <li>Pengesah Jadwal Roster Shift 24/7 dan Distribusi Kamar Asrama.</li>
-                                    <li>Pemberi rekomendasi sanksi disiplin jika terjadi pelanggaran.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="text-sky-400 font-black text-xl">↓</div>
-
-                        <div class="w-full max-w-md bg-gradient-to-r from-sky-900 via-sky-800 to-slate-800 pt-7 pb-5 px-4 rounded-2xl border-2 border-sky-400 text-center shadow-xl relative ring-4 ring-sky-500/30">
-                            <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-sky-400 text-slate-950 px-3.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider shadow whitespace-nowrap">📍 POSISI JABATAN ANDA</span>
-                            <div class="font-black text-base sm:text-lg text-white mt-2 leading-snug">WALI ASRAMA (Penata Layanan Operasional)</div>
-                            <div class="text-[11px] text-sky-200 font-medium mt-1">PPPK Golongan IX • Jabatan Pelaksana / Koordinator Asrama (Kelas 7)</div>
-                            <div class="mt-3 pt-2.5 border-t border-sky-700/60 text-[10px] text-sky-100 text-left bg-sky-950/60 p-2.5 rounded-lg space-y-1">
-                                <p><strong>Fungsi Koordinasi:</strong> Mengelola 25 siswa binaan (Rasio 1:25) & membina 2-3 Wali Asuh.</p>
-                                <p><strong>Laporan Harian:</strong> Mengisi logbook e-Kinerja dan melapor harian ke Kasubag TU.</p>
-                            </div>
-                        </div>
-
-                        <div class="text-teal-400 font-black text-xl">↓</div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl">
-                            <div class="bg-slate-800 p-3.5 rounded-xl border border-teal-500/50 space-y-1 text-center">
-                                <span class="px-2 py-0.5 bg-teal-500/20 text-teal-300 font-bold text-[9px] rounded">Bawahan Langsung / Subordinat</span>
-                                <div class="font-bold text-white text-xs mt-1">WALI ASUH LAPANGAN</div>
-                                <p class="text-[10px] text-slate-300">Petugas Pengasuhan Mikro (Rasio 1:10) yang dipimpin langsung oleh Wali Asrama saat shift.</p>
-                            </div>
-
-                            <div class="bg-slate-800 p-3.5 rounded-xl border border-indigo-500/50 space-y-1 text-center">
-                                <span class="px-2 py-0.5 bg-indigo-500/20 text-indigo-300 font-bold text-[9px] rounded">Sasar Objek Pengasuhan</span>
-                                <div class="font-bold text-white text-xs mt-1">SISWA BINAAN UPT SR</div>
-                                <p class="text-[10px] text-slate-300">25 Anak miskin ekstrem/penderita masalah sosial yang diasuh karakter & kedisiplinannya.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-               <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                        <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
-                            <span>👔</span> Peran Kasubag TU (Atasan Langsung)
-                        </div>
-                        <ul class="space-y-1 text-slate-600 list-disc pl-4 ml-1 text-[11px]">
-                            <li><strong>Penilaian SKP:</strong> Meninjau dan menyetujui capaian kerja harian di portal e-Kinerja.</li>
-                            <li><strong>Legalitas Cuti:</strong> Menandatangani form rekomendasi izin/cuti harian.</li>
-                            <li><strong>Pembagian Shift:</strong> Menetapkan Roster Shift 24/7 harian & bulanan.</li>
-                            <li><strong>Pengawasan Disiplin:</strong> Mencatat absen mangkir dan meneruskan saran sanksi.</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                        <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
-                            <span>🏛️</span> Peran Kepala UPT (Atasan Banding)
-                        </div>
-                        <ul class="space-y-1 text-slate-600 list-disc pl-4 ml-1 text-[11px]">
-                            <li><strong>Penetapan Keputusan SKP:</strong> Pengesah akhir dokumen SKP tahunan Wali Asrama.</li>
-                            <li><strong>Banding Kepegawaian:</strong> Tempat pengajuan keberatan atas penilaian kinerja.</li>
-                            <li><strong>Penjatuhan Sanksi:</strong> Menandatangani SK Hukuman Disiplin sedang/berat.</li>
-                            <li><strong>Kebijakan Umum:</strong> Mengeluarkan Standard Operating Procedure (SOP) Asrama.</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                        <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
-                            <span>🤝</span> Hubungan Kerja Lintas Fungsi
-                        </div>
-                        <ul class="space-y-1 text-slate-600 list-disc pl-4 ml-1 text-[11px]">
-                            <li><strong>Tim Medis UPT:</strong> Koordinasi penanganan siswa sakit / rujukan RS.</li>
-                            <li><strong>Pekerja Sosial (Peksos):</strong> Koordinasi kasus trauma / rehabilitasi sosial siswa.</li>
-                            <li><strong>Tenaga Pendidik / Guru SR:</strong> Sinkronisasi kedisiplinan & jadwal kelas.</li>
-                            <li><strong>Tim Keamanan & K3:</strong> Koordinasi situasi darurat malam hari.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="overflow-x-auto rounded-xl border border-slate-200">
-                    <table class="w-full text-left text-xs border-collapse min-w-[550px]">
-                        <thead>
-                            <tr class="bg-slate-900 text-white font-bold">
-                                <th class="p-2.5 border-b border-slate-700">Prosedur Kepegawaian</th>
-                                <th class="p-2.5 border-b border-slate-700 bg-amber-900/80">Atasan Langsung (Kasubag TU)</th>
-                                <th class="p-2.5 border-b border-slate-700 bg-purple-900/80">Atasan Banding / Pembina (Kepala UPT)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200 text-slate-700">
-                            <tr>
-                                <td class="p-2.5 font-bold">Laporan Kinerja Harian / Logbook SKP</td>
-                                <td class="p-2.5 font-bold text-amber-800">Menyetujui & Memverifikasi Harian</td>
-                                <td class="p-2.5 text-slate-500">Menerima Rekapitulasi Laporan Bulanan</td>
-                            </tr>
-                            <tr class="bg-slate-50">
-                                <td class="p-2.5 font-bold">Pengajuan Cuti Tahunan / Sakit / CAP</td>
-                                <td class="p-2.5 font-bold text-amber-800">Memeriksa Pertimbangan & Menyetujui Form Cuti</td>
-                                <td class="p-2.5 font-bold text-purple-800">Menandatangani Surat Izin Cuti Resmi (SK Cuti)</td>
-                            </tr>
-                            <tr>
-                                <td class="p-2.5 font-bold">Jadwal Shift Roster & Piket Asrama</td>
-                                <td class="p-2.5 font-bold text-amber-800">Menyusun & Mengesahkan Jadwal Roster</td>
-                                <td class="p-2.5 text-slate-500">Supervisi Kelancaran Layanan UPT</td>
-                            </tr>
-                            <tr class="bg-slate-50">
-                                <td class="p-2.5 font-bold">Penilaian Kinerja Akhir Tahun (e-Kinerja)</td>
-                                <td class="p-2.5 font-bold text-amber-800">Pejabat Penilai Utama (Memberikan Rating Kinerja)</td>
-                                <td class="p-2.5 font-bold text-purple-800">Atasan Pejabat Penilai (Mengesahkan SKP Final)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </div>
-
         <div id="page-tugas-kewajiban" class="page-section space-y-6">
             <section class="bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-slate-200 space-y-6">
                 <div class="border-b border-slate-200 pb-3">
                     <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2">
-                        <span>📋</span> Rincian Tugas Pokok, Kewajiban ASN, & SKP Wali Asrama
+                        <span>📋</span> Rincian Tugas Pokok & Kewajiban ASN Wali Asrama
                     </h2>
                     <p class="text-xs text-slate-600 mt-1">
-                        Berdasarkan <strong>UU No. 20 Tahun 2023 (Pasal 24)</strong> dan <strong>Permensos No. 7 Tahun 2025</strong>, berikut adalah kewajiban hukum dan rincian operasional pengasuhan siswa di UPT Sekolah Rakyat.
+                        Berdasarkan <strong>UU No. 20 Tahun 2023 (Pasal 24)</strong> dan <strong>Juknis Asrama Sekolah Rakyat</strong>, berikut adalah kewajiban hukum dan rincian operasional pengasuhan siswa.
                     </p>
                 </div>
 
@@ -382,14 +217,14 @@
 
                     <div class="bg-teal-50 p-4 rounded-xl border border-teal-200 space-y-2">
                         <h3 class="font-bold text-teal-900 text-sm flex items-center gap-1.5">
-                            <span>🎯</span> 5 Fokus Sasaran Kinerja Pegawai (SKP) Wali Asrama
+                            <span>🎯</span> Fokus Sasaran Operasional Wali Asrama
                         </h3>
                         <ul class="space-y-1.5 text-slate-700 list-disc pl-4 ml-1">
-                            <li><strong>Pengasuhan & Karakter (30%):</strong> Terlaksananya bimbingan mental, spiritual, dan kedisiplinan 25 siswa binaan.</li>
-                            <li><strong>Supervisi & Manajerial (25%):</strong> Pengawasan kinerja 2-3 Wali Asuh dan evaluasi ketertiban kamar harian.</li>
-                            <li><strong>Gizi, Kesehatan & K3 (20%):</strong> Memastikan pemenuhan makan, kebersihan lingkungan, dan respon medis cepat.</li>
-                            <li><strong>Mitigasi Kasus & Proteksi (15%):</strong> Pengawasan anti-bullying, tindak kekerasan, dan laporan insiden harian.</li>
-                            <li><strong>Administrasi e-Kinerja (10%):</strong> Input logbook harian ke Atasan Langsung (Kasubag TU).</li>
+                            <li><strong>Pengasuhan & Karakter:</strong> Terlaksananya bimbingan mental, spiritual, dan kedisiplinan 25 siswa binaan.</li>
+                            <li><strong>Kemitraan Operasional:</strong> Berkoordinasi secara sinergis dengan Wali Asuh dalam mengelola ketertiban harian.</li>
+                            <li><strong>Gizi, Kesehatan & K3:</strong> Memastikan pemenuhan makan, kebersihan lingkungan, dan respon medis cepat.</li>
+                            <li><strong>Mitigasi Kasus & Proteksi:</strong> Pengawasan anti-bullying, tindak kekerasan, dan laporan insiden harian.</li>
+                            <li><strong>Administrasi:</strong> Menyusun program asrama dan memastikan keterlaksanaannya bersama pihak sekolah.</li>
                         </ul>
                     </div>
                 </div>
@@ -405,17 +240,17 @@
                                     <span class="text-sky-700 bg-sky-100 px-2 py-0.5 rounded text-[10px]">Rutin Harian</span>
                                 </div>
                                 <p class="text-slate-600 leading-relaxed">
-                                    Mendampingi aktivitas ibadah bersama, mengawasi jam belajar mandiri malam, membimbing kedisiplinan kebersihan kamar, serta membangun karakter kemandirian bagi anak didik dari latar belakang miskin ekstrem/penderita masalah sosial.
+                                    Mendampingi aktivitas ibadah bersama, mengawasi jam belajar mandiri malam, membimbing kedisiplinan kebersihan kamar, serta membangun karakter kemandirian bagi anak didik.
                                 </p>
                             </div>
 
                             <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                                 <div class="font-bold text-slate-900 flex justify-between">
-                                    <span>2. Supervisi Operasional Wali Asuh (Rasio 1:25 vs 1:10)</span>
-                                    <span class="text-teal-700 bg-teal-100 px-2 py-0.5 rounded text-[10px]">Manajerial</span>
+                                    <span>2. Koordinasi Sinergis dengan Wali Asuh</span>
+                                    <span class="text-teal-700 bg-teal-100 px-2 py-0.5 rounded text-[10px]">Kemitraan</span>
                                 </div>
                                 <p class="text-slate-600 leading-relaxed">
-                                    Mengarahkan dan mengawasi 2-3 Wali Asuh yang menangani pengasuhan mikro (1:10), memastikan pembagian jadwal piket pengawasan berjalan presisi tanpa kekosongan di area asrama.
+                                    Berkoordinasi secara sejajar dengan Wali Asuh terkait perkembangan peserta didik untuk memastikan efektivitas pengasuhan, kedisiplinan, dan keamanan lingkungan asrama.
                                 </p>
                             </div>
 
@@ -425,7 +260,7 @@
                                     <span class="text-amber-700 bg-amber-100 px-2 py-0.5 rounded text-[10px]">Tanggap Darurat</span>
                                 </div>
                                 <p class="text-slate-600 leading-relaxed">
-                                    Melakukan penanganan pertama saat ada siswa sakit, berkoordinasi dengan Tim Medis UPT Sekolah Rakyat atau Puskesmas/RS rujukan, serta melaporkan kondisi darurat kepada Kepala UPT/Pekerja Sosial.
+                                    Melakukan penanganan pertama saat ada siswa sakit, berkoordinasi dengan Tim Medis UPT Sekolah Rakyat atau Puskesmas/RS rujukan, serta melaporkan kondisi darurat.
                                 </p>
                             </div>
 
@@ -435,7 +270,7 @@
                                     <span class="text-rose-700 bg-rose-100 px-2 py-0.5 rounded text-[10px]">Proteksi Mutlak</span>
                                 </div>
                                 <p class="text-slate-600 leading-relaxed">
-                                    Deteksi dini ancaman perundungan (bullying), kekerasan fisik/seksual, serta intoleransi. Wajib merespons dan memutus potensi gesekan antar-siswa di lingkungan hunian asrama.
+                                    Deteksi dini ancaman perundungan (bullying), kekerasan fisik/seksual, serta intoleransi. Wajib merespons dan memutus potensi gesekan antar-siswa di lingkungan asrama.
                                 </p>
                             </div>
                         </div>
@@ -528,7 +363,7 @@
                                     <tr class="bg-slate-50">
                                         <td class="p-2.5 font-bold">Pekerja Sosial Ahli Muda / Penyuluh Sosial Ahli Muda</td>
                                         <td class="p-2.5 text-center font-bold text-teal-700">Kelas 10</td>
-                                        <td class="p-2.5">Jabatan Fungsional Keahlian Muda / Kasubag TU UPT SR</td>
+                                        <td class="p-2.5">Jabatan Fungsional Keahlian Muda</td>
                                     </tr>
                                     <tr>
                                         <td class="p-2.5 font-bold">Pekerja Sosial Ahli Madya / Penyuluh Sosial Ahli Madya</td>
@@ -672,7 +507,7 @@
                         </label>
                         <label class="flex items-center space-x-2 bg-white p-2.5 rounded border border-sky-100 cursor-pointer">
                             <input type="checkbox" onchange="updateChecklist()" class="chk-item rounded text-sky-600">
-                            <span>Lapor Diri ke Kasubag TU (Atasan Langsung)</span>
+                            <span>Lapor Diri ke Kepala Sekolah/UPT</span>
                         </label>
                         <label class="flex items-center space-x-2 bg-white p-2.5 rounded border border-sky-100 cursor-pointer">
                             <input type="checkbox" onchange="updateChecklist()" class="chk-item rounded text-sky-600">
@@ -924,7 +759,7 @@
                         <span>🏢</span> Kedudukan, Rasio Supervisi Siswa & Shift Roster 24/7
                     </h2>
                     <p class="text-xs text-slate-600 mt-1">
-                        Berdasarkan <strong>Permensos No. 7 Tahun 2025</strong> dan Pedoman Operasional UPT SR, sistem pengasuhan menggunakan tata kelola terpadu.
+                        Berdasarkan <strong>Juknis Asrama Sekolah Rakyat</strong> dan Pedoman Operasional UPT SR, sistem pengasuhan menggunakan tata kelola terpadu.
                     </p>
                 </div>
 
@@ -943,7 +778,7 @@
                             <span>👥</span> Rasio Pengawasan 1 : 25
                         </div>
                         <p class="text-slate-600">
-                            1 Wali Asrama (Penata Layanan Operasional - Class 7) memegang tanggung jawab manajerial atas 25 siswa dan mengawasi 2-3 Wali Asuh (rasio mikro 1:10).
+                            1 Wali Asrama (Penata Layanan Operasional - Class 7) memegang tanggung jawab manajerial atas 25 siswa dan bersinergi dengan 2-3 Wali Asuh (rasio mikro 1:10).
                         </p>
                     </div>
 
@@ -958,22 +793,22 @@
                 </div>
 
                 <div class="p-4 sm:p-5 bg-slate-900 text-white rounded-2xl space-y-3">
-                    <h3 class="text-xs sm:text-sm font-bold text-sky-300 text-center border-b border-slate-800 pb-2">Garis Komando Ringkas Pengasuhan Asrama UPT Sekolah Rakyat</h3>
+                    <h3 class="text-xs sm:text-sm font-bold text-sky-300 text-center border-b border-slate-800 pb-2">Posisi Struktural Pengasuhan Asrama Sekolah Rakyat</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-center text-xs">
                         <div class="bg-slate-800 p-3 rounded-xl border border-purple-500/50">
-                            <span class="text-[10px] text-purple-400 block font-bold">Level Pimpinan UPT</span>
-                            <span class="font-bold text-white text-sm">Kepala UPT SR</span>
-                            <p class="text-[10px] text-slate-300 mt-1">Penanggung Jawab UPT & Atasan Banding SKP (Kelas 13/15)</p>
-                        </div>
-                        <div class="bg-slate-800 p-3 rounded-xl border border-amber-500/80 ring-2 ring-amber-500/30">
-                            <span class="text-[10px] text-amber-400 block font-bold">⚡ ATASAN LANGSUNG</span>
-                            <span class="font-bold text-amber-200 text-sm">Kasubag TU / Katim Operasional</span>
-                            <p class="text-[10px] text-amber-100/80 mt-1">Pejabat Penilai SKP, e-Kinerja & Cuti (Kelas 10/11)</p>
+                            <span class="text-[10px] text-purple-400 block font-bold">Koordinator</span>
+                            <span class="font-bold text-white text-sm">Kepala Sekolah</span>
+                            <p class="text-[10px] text-slate-300 mt-1">Mengkoordinasikan langsung kedudukan Wali Asrama dan operasional sekolah.</p>
                         </div>
                         <div class="bg-slate-800 p-3 rounded-xl border border-sky-500/50">
-                            <span class="text-[10px] text-sky-400 block font-bold">Level Pelaksana / Koordinator</span>
-                            <span class="font-bold text-white text-sm">Wali Asrama (PPPK Gol IX)</span>
-                            <p class="text-[10px] text-slate-300 mt-1">Supervisi 25 Siswa & Wali Asuh (Kelas Jabatan 7)</p>
+                            <span class="text-[10px] text-sky-400 block font-bold">Pelaksana Pengelolaan</span>
+                            <span class="font-bold text-white text-sm">Wali Asrama</span>
+                            <p class="text-[10px] text-slate-300 mt-1">Bertanggung jawab mengelola dan membimbing asrama sesuai Juknis.</p>
+                        </div>
+                        <div class="bg-slate-800 p-3 rounded-xl border border-teal-500/50">
+                            <span class="text-[10px] text-teal-400 block font-bold">Pelaksana Pengasuhan</span>
+                            <span class="font-bold text-white text-sm">Wali Asuh</span>
+                            <p class="text-[10px] text-slate-300 mt-1">Sejajar dengan Wali Asrama, bertindak sebagai pengasuh, pendidik, dan pelindung.</p>
                         </div>
                     </div>
                 </div>
@@ -1036,7 +871,6 @@
            </section>
         </div>
 
-        <!-- HALAMAN BARU: SUMBER HUKUM & PDF -->
         <div id="page-sumber-hukum" class="page-section space-y-6">
             <section class="bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-slate-200 space-y-6">
                 <div class="border-b border-slate-200 pb-3">
@@ -1113,11 +947,11 @@
                     <!-- File 6 -->
                     <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
                         <div>
-                            <span class="px-2 py-0.5 bg-purple-100 text-purple-800 font-bold rounded text-[10px]">Struktur & SOTK UPT</span>
-                            <h3 class="font-bold text-slate-900 text-sm mt-2">Permensos No. 7 Tahun 2025</h3>
-                            <p class="text-slate-600 mt-1">Susunan Organisasi dan Tata Kerja (SOTK) UPT Sekolah Rakyat, mencakup kedudukan hierarki pengasuhan dan atasan langsung.</p>
+                            <span class="px-2 py-0.5 bg-purple-100 text-purple-800 font-bold rounded text-[10px]">Juknis Pembinaan Asrama</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">Petunjuk Teknis Asrama Sekolah Rakyat</h3>
+                            <p class="text-slate-600 mt-1">Pedoman kegiatan, SOTK asrama, rincian koordinasi, hingga aturan khusus peserta didik dan kepengasuhan.</p>
                         </div>
-                        <a href="./Permensos_7_2025.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-purple-600 text-white font-bold rounded-lg transition">
+                        <a href="./petunjuk-teknis-wali-asrama-wali-asuh.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-purple-600 text-white font-bold rounded-lg transition">
                             <span>📄</span> Download PDF
                         </a>
                     </div>
@@ -1132,7 +966,7 @@
         <footer class="bg-slate-900 text-slate-400 rounded-2xl p-5 text-xs text-center space-y-2 border border-slate-800">
             <p class="font-bold text-slate-200">Portal Edukasi Mandiri & Panduan Kepegawaian PPPK UPT Sekolah Rakyat</p>
             <p class="max-w-4xl mx-auto text-[11px] text-slate-400">
-                Disusun sebagai referensi mandiri berdasarkan UU 20/2023, Perpres 11/2024, PP 49/2018, PP 94/2021, Perba BKN 7/2022, Permensos 1/2025 (Pembaruan Jabatan & Kelas Jabatan Kemensos), dan Permensos 5 & 6/2023. Portal ini tidak mewakili instansi pemerintah resmi manapun.
+                Disusun sebagai referensi mandiri berdasarkan UU 20/2023, Perpres 11/2024, PP 49/2018, PP 94/2021, Perba BKN 7/2022, Permensos 1/2025, Permensos 5 & 6/2023, dan Juknis Asrama. Portal ini tidak mewakili instansi pemerintah resmi manapun.
             </p>
             <p class="text-slate-500 pt-2 border-t border-slate-800 text-[10px] flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-2">
                 <span class="font-bold text-amber-500">© 2026 AW DESIGN</span> 
@@ -1266,7 +1100,7 @@
             document.getElementById('res-makan').innerText = 'Rp ' + uangMakan.toLocaleString('id-ID');
             document.getElementById('tukin-label').innerText = 'Tukin Class ' + kelasJabatan + ':';
             document.getElementById('res-tukin').innerText = 'Rp ' + tukinDasar.toLocaleString('id-ID');
-         document.getElementById('res-pot-mangkir').innerText = '- Rp ' + Math.round(potMangkir).toLocaleString('id-ID');
+            document.getElementById('res-pot-mangkir').innerText = '- Rp ' + Math.round(potMangkir).toLocaleString('id-ID');
             document.getElementById('res-bpjs').innerText = '- Rp ' + Math.round(bpjsPot).toLocaleString('id-ID');
             document.getElementById('res-total').innerText = 'Rp ' + Math.round(totalTHP).toLocaleString('id-ID');
 
@@ -1329,12 +1163,10 @@
             }
         }
 
-     const topics = [
-            { key: 'atasan langsung', title: 'Atasan Langsung Wali Asrama (Kasubag TU)', page: 'struktur-org', info: 'Kasubag TU / Ketua Tim Operasional adalah Penilai SKP, e-Kinerja, dan persetujuan Cuti harian Wali Asrama.' },
-            { key: 'struktur organisasi', title: 'Struktur Organisasi & SOTK UPT SR', page: 'struktur-org', info: 'Bagan komando Kepala UPT → Kasubag TU → Wali Asrama (PPPK Gol IX) → Wali Asuh → Siswa.' },
+        const topics = [
             { key: 'permensos 1/2025', title: 'Permensos No. 1 Tahun 2025 (Pembaruan Jabatan & Kelas Jabatan)', page: 'kelas-jabatan', info: 'Aturan pembaruan kelas jabatan Kemensos, jenjang JF Peksos/PenyiSos & aturan transisi 5 tahun Pasal 7.' },
             { key: 'kelas jabatan', title: 'Struktur Kelas Jabatan Kemensos', page: 'kelas-jabatan', info: 'Matriks lengkap kelas jabatan 5 s.d 17 di lingkungan Kementerian Sosial.' },
-            { key: 'tugas', title: 'Detail Tugas Pokok & Kewajiban Wali Asrama', page: 'tugas-kewajiban', info: 'Rincian tugas pengasuhan 25 siswa, supervisi Wali Asuh, mitigasi kasus, & SKP.' },
+            { key: 'tugas', title: 'Detail Tugas Pokok & Kewajiban Wali Asrama', page: 'tugas-kewajiban', info: 'Rincian tugas pengasuhan 25 siswa, koordinasi dengan Wali Asuh, mitigasi kasus, & SKP.' },
             { key: 'kewajiban', title: '8 Kewajiban Utama ASN (UU 20/2023)', page: 'tugas-kewajiban', info: 'Setia Pancasila, netralitas, disiplin, menjalankan nilai BerAKHLAK, & menjaga rahasia.' },
             { key: 'gaji', title: 'Gaji Pokok & Kenaikan Berkala', page: 'kalkulator', info: 'Gaji pokok Gol IX diawali Rp 3.203.600 dan naik berkala setiap 2 tahun.' },
             { key: 'tukin', title: 'Tunjangan Kinerja (Tukin) Class 7, 6, & 5', page: 'kalkulator', info: 'Tukin Kemensos Class 7 sebesar Rp 3.915.950, Class 6 Rp 3.510.400, dan Class 5 Rp 3.134.250 dibayar 100% berdasarkan e-Kinerja.' },
@@ -1368,7 +1200,7 @@
                 `).join('');
                 resultsBox.classList.remove('hidden');
             } else {
-                resultsList.innerHTML = '<p class="text-slate-500 italic">Topik tidak ditemukan. Coba kata kunci seperti "atasan langsung", "struktur", "permensos", "gaji", "cuti", "tukin", atau "shift".</p>';
+                resultsList.innerHTML = '<p class="text-slate-500 italic">Topik tidak ditemukan. Coba kata kunci seperti "permensos", "gaji", "cuti", "tukin", atau "shift".</p>';
                 resultsBox.classList.remove('hidden');
             }
         }
@@ -1379,12 +1211,11 @@
         }
 
         window.addEventListener('DOMContentLoaded', () => {
-const ctxTask = document.getElementById('taskAllocationChart').getContext('2d');
+            const ctxTask = document.getElementById('taskAllocationChart').getContext('2d');
             new Chart(ctxTask, {
                 type: 'doughnut',
                 data: {
-                    // Menghapus .map(wrapLabel) agar teks tidak menjadi multiline yang bertumpuk
-                    labels: ['Pengasuhan & Karakter', 'Supervisi Wali Asuh', 'Gizi & Kesehatan', 'Mitigasi Risk & Kasus', 'Administrasi e-SKP'],
+                    labels: ['Pengasuhan & Karakter', 'Sinergi Wali Asuh', 'Gizi & Kesehatan', 'Mitigasi Risk & Kasus', 'Administrasi Program'],
                     datasets: [{
                         data: [30, 25, 20, 15, 10],
                         backgroundColor: ['#0284c7', '#0d9488', '#f59e0b', '#e11d48', '#64748b']
@@ -1397,15 +1228,16 @@ const ctxTask = document.getElementById('taskAllocationChart').getContext('2d');
                         legend: { 
                             position: 'bottom',
                             labels: {
-                                padding: 20,       // Memberi jarak ruang antar teks
-                                boxWidth: 15,      // Mengecilkan kotak warna legenda
-                                font: { size: 11 } // Menyesuaikan ukuran huruf
+                                padding: 20,
+                                boxWidth: 15,
+                                font: { size: 11 }
                             }
                         },
                         tooltip: mandatoryTooltipOption.plugins.tooltip
                     }
                 }
             });
+
             const ctxJobClass = document.getElementById('jobClassDistributionChart').getContext('2d');
             new Chart(ctxJobClass, {
                 type: 'bar',
@@ -1470,11 +1302,10 @@ const ctxTask = document.getElementById('taskAllocationChart').getContext('2d');
                 }
             });
 
-const ctxPie = document.getElementById('thpPieChart').getContext('2d');
+            const ctxPie = document.getElementById('thpPieChart').getContext('2d');
             thpChartInstance = new Chart(ctxPie, {
                 type: 'doughnut',
                 data: {
-                    // Menghapus .map(wrapLabel) agar teks tidak menjadi multiline yang bertumpuk
                     labels: ['Gaji Pokok', 'Tunj. Keluarga & Pangan', 'Uang Makan', 'Tukin Bersih'],
                     datasets: [{
                         data: [3203600, 738184, 814000, 3915950],
@@ -1497,6 +1328,7 @@ const ctxPie = document.getElementById('thpPieChart').getContext('2d');
                     }
                 }
             });
+
             const ctxMkg = document.getElementById('mkgProgressionChart').getContext('2d');
             new Chart(ctxMkg, {
                 type: 'line',

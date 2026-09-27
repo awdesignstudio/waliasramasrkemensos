@@ -772,6 +772,25 @@
                             </div>
                         </div>
 
+                        <!-- AWAL TAMBAHAN SIMULASI THR -->
+                        <div class="bg-gradient-to-r from-emerald-900 to-teal-900 text-white p-4 sm:p-5 rounded-2xl shadow-md space-y-3 text-xs font-mono">
+                            <h3 class="font-bold text-emerald-300 text-sm border-b border-emerald-700/50 pb-2 flex justify-between">
+                                <span>🎉 SIMULASI THR / GAJI KE-13</span>
+                                <span class="text-[10px] bg-emerald-800/80 text-emerald-200 px-2 py-0.5 rounded font-sans">Cair Tahunan</span>
+                            </h3>
+                            <div class="space-y-1.5 text-[11px]">
+                                <div class="flex justify-between"><span>1x Gaji Pokok:</span><span id="res-thr-gaji">Rp 0</span></div>
+                                <div class="flex justify-between text-emerald-200"><span>1x Tunj. Keluarga:</span><span id="res-thr-keluarga">Rp 0</span></div>
+                                <div class="flex justify-between text-emerald-200"><span>1x Tunj. Pangan/Beras:</span><span id="res-thr-pangan">Rp 0</span></div>
+                                <div class="flex justify-between text-amber-300 font-bold"><span>100% Tunjangan Kinerja:</span><span id="res-thr-tukin">Rp 0</span></div>
+                            </div>
+                            <div class="border-t border-emerald-700/50 pt-2 flex justify-between items-center text-emerald-100 font-bold text-sm sm:text-base font-sans">
+                                <span>TOTAL DITERIMA (Nett):</span>
+                                <span id="res-thr-total" class="text-white text-lg">Rp 0</span>
+                            </div>
+                        </div>
+                        <!-- AKHIR TAMBAHAN SIMULASI THR -->
+
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col items-center">
                             <h3 class="text-xs font-bold text-slate-800 mb-2 text-center">Komposisi Hak Finansial Bulanan</h3>
                             <div class="chart-container">
@@ -1247,9 +1266,20 @@
             document.getElementById('res-makan').innerText = 'Rp ' + uangMakan.toLocaleString('id-ID');
             document.getElementById('tukin-label').innerText = 'Tukin Class ' + kelasJabatan + ':';
             document.getElementById('res-tukin').innerText = 'Rp ' + tukinDasar.toLocaleString('id-ID');
-            document.getElementById('res-pot-mangkir').innerText = '- Rp ' + Math.round(potMangkir).toLocaleString('id-ID');
+         document.getElementById('res-pot-mangkir').innerText = '- Rp ' + Math.round(potMangkir).toLocaleString('id-ID');
             document.getElementById('res-bpjs').innerText = '- Rp ' + Math.round(bpjsPot).toLocaleString('id-ID');
             document.getElementById('res-total').innerText = 'Rp ' + Math.round(totalTHP).toLocaleString('id-ID');
+
+            // --- RUMUS THR & GAJI KE-13 ---
+            const totalKeluarga = tunjIstri + tunjAnak;
+            const totalTHR = gajiPokok + totalKeluarga + tunjPangan + tukinDasar;
+            
+            document.getElementById('res-thr-gaji').innerText = 'Rp ' + gajiPokok.toLocaleString('id-ID');
+            document.getElementById('res-thr-keluarga').innerText = 'Rp ' + Math.round(totalKeluarga).toLocaleString('id-ID');
+            document.getElementById('res-thr-pangan').innerText = 'Rp ' + Math.round(tunjPangan).toLocaleString('id-ID');
+            document.getElementById('res-thr-tukin').innerText = 'Rp ' + tukinDasar.toLocaleString('id-ID');
+            document.getElementById('res-thr-total').innerText = 'Rp ' + Math.round(totalTHR).toLocaleString('id-ID');
+            // --- AKHIR RUMUS THR ---
 
             if (thpChartInstance) {
                 thpChartInstance.data.datasets[0].data = [

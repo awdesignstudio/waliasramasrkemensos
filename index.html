@@ -92,8 +92,9 @@
                 <button onclick="switchTab('pegawai-baru')" id="tab-pegawai-baru" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🌱 Masa Kerja &lt; 1 Thn</button>
                 <button onclick="switchTab('kalkulator')" id="tab-kalkulator" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🧮 Simulasi Gaji & THP</button>
                 <button onclick="switchTab('matriks-cuti')" id="tab-matriks-cuti" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">📅 Hak Cuti & Syarat</button>
-                <button onclick="switchTab('operasional')" id="tab-operasional" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🏢 Roster Shift 24/7</button>
+              <button onclick="switchTab('operasional')" id="tab-operasional" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">🏢 Roster Shift 24/7</button>
                 <button onclick="switchTab('disiplin')" id="tab-disiplin" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-slate-300 hover:text-white transition">⚠️ Sanksi & Potongan</button>
+                <button onclick="switchTab('sumber-hukum')" id="tab-sumber-hukum" class="tab-btn px-3 py-2 rounded-lg border border-slate-800 text-emerald-300 font-bold hover:text-white transition">📚 Sumber Hukum & PDF</button>
             </div>
         </nav>
     </header>
@@ -627,10 +628,20 @@
                                     <td class="p-2.5 text-emerald-700 font-bold">✅ BERHAK (Duka / Sakit Inti)</td>
                                     <td class="p-2.5 text-emerald-700 font-bold">✅ BERHAK (Max 1 Bulan)</td>
                                 </tr>
-                                <tr class="bg-slate-50">
+                               <tr class="bg-slate-50">
                                     <td class="p-2.5 font-bold">Gaji Pokok (Perpres 11/2024)</td>
                                     <td class="p-2.5 text-emerald-700 font-bold">✅ 100% Sejak SPMT/TMT</td>
                                     <td class="p-2.5 text-emerald-700 font-bold">✅ 100% Sesuai MKG</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2.5 font-bold">Tunjangan Hari Raya (THR)</td>
+                                    <td class="p-2.5 text-amber-700 font-bold">⚠️ BERHAK (Jika SPMT sebelum H-10 Raya)</td>
+                                    <td class="p-2.5 text-emerald-700 font-bold">✅ 100% Komponen Penuh</td>
+                                </tr>
+                                <tr class="bg-slate-50">
+                                    <td class="p-2.5 font-bold">Gaji Ke-13 (Bantuan Pendidikan)</td>
+                                    <td class="p-2.5 text-amber-700 font-bold">⚠️ BERHAK (Jika SPMT sblm jadwal cair)</td>
+                                    <td class="p-2.5 text-emerald-700 font-bold">✅ 100% Komponen Penuh</td>
                                 </tr>
                                 <tr>
                                     <td class="p-2.5 font-bold">Tunjangan Kinerja</td>
@@ -775,6 +786,23 @@
                     <div class="chart-container">
                         <canvas id="mkgProgressionChart"></canvas>
                     </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-emerald-900 to-teal-900 text-white p-4 sm:p-5 rounded-xl shadow-md border border-emerald-700 space-y-2 mt-4">
+                    <h3 class="text-sm font-bold text-emerald-300 flex items-center gap-2">
+                        <span>💰</span> BONUS TAHUNAN: Komponen Tunjangan Hari Raya (THR) & Gaji Ke-13
+                    </h3>
+                    <p class="text-xs text-emerald-50 leading-relaxed">
+                        Di luar THP bulanan, PPPK berhak menerima <strong>THR</strong> (cair menjelang hari raya) dan <strong>Gaji Ke-13</strong> (cair sekitar bulan Juni/Juli untuk tahun ajaran baru). Mengacu pada <strong>PP No. 14 Tahun 2024</strong>, komponen pencairannya sangat maksimal, meliputi:
+                    </p>
+                    <ul class="list-disc pl-5 text-xs text-emerald-100 space-y-1 font-semibold">
+                        <li>1x Gaji Pokok Utuh</li>
+                        <li>1x Tunjangan Keluarga (Suami/Istri & Anak)</li>
+                        <li>1x Tunjangan Pangan / Beras</li>
+                        <li>Tunjangan Jabatan / Umum</li>
+                        <li class="text-amber-300">Tambahan: 100% Tunjangan Kinerja (Tukin) per bulan!</li>
+                    </ul>
+                    <p class="text-[10px] text-emerald-400 mt-2 italic">*Catatan: Uang Makan bulanan (berdasarkan absensi harian) tidak termasuk dalam komponen THR/Gaji 13.</p>
                 </div>
             </section>
         </div>
@@ -986,6 +1014,99 @@
                         ⚠️ SANKSI MUTLAK: LANGSUNG DIKENAKAN HUKUMAN DISIPLIN BERAT BERUPA PEMECATAN TIDAK DENGAN HORMAT DAN PROSES HUKUM PIDANA!
                     </p>
                 </div>
+           </section>
+        </div>
+
+        <!-- HALAMAN BARU: SUMBER HUKUM & PDF -->
+        <div id="page-sumber-hukum" class="page-section space-y-6">
+            <section class="bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-slate-200 space-y-6">
+                <div class="border-b border-slate-200 pb-3">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span>📚</span> Arsip Sumber Hukum & Peraturan Resmi
+                    </h2>
+                    <p class="text-xs text-slate-600 mt-1">
+                        Unduh salinan asli file PDF peraturan untuk dipelajari lebih lanjut. Pastikan Anda mengacu pada dokumen-dokumen resmi di bawah ini sebagai pegangan utama hak dan kewajiban Anda.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    
+                    <!-- File 1 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
+                        <div>
+                            <span class="px-2 py-0.5 bg-sky-100 text-sky-800 font-bold rounded text-[10px]">Gaji Pokok PPPK</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">Perpres No. 11 Tahun 2024</h3>
+                            <p class="text-slate-600 mt-1">Mengatur tabel besaran gaji pokok terbaru PPPK Golongan I hingga XVII yang mengalami kenaikan 8%.</p>
+                        </div>
+                        <a href="./Perpres_11_2024.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-sky-600 text-white font-bold rounded-lg transition">
+                            <span>📄</span> Download PDF
+                        </a>
+                    </div>
+
+                    <!-- File 2 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
+                        <div>
+                            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 font-bold rounded text-[10px]">Kelas Jabatan & Tukin</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">Permensos No. 1 Tahun 2025</h3>
+                            <p class="text-slate-600 mt-1">Pembaruan kelas jabatan di lingkungan Kemensos. Menetapkan Penata Layanan Operasional di Kelas Jabatan 7.</p>
+                        </div>
+                        <a href="./Permensos_1_2025.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-indigo-600 text-white font-bold rounded-lg transition">
+                            <span>📄</span> Download PDF
+                        </a>
+                    </div>
+
+                    <!-- File 3 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
+                        <div>
+                            <span class="px-2 py-0.5 bg-amber-100 text-amber-800 font-bold rounded text-[10px]">Tunjangan Hari Raya (THR) & Gaji 13</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">PP No. 14 Tahun 2024</h3>
+                            <p class="text-slate-600 mt-1">Dasar hukum pemberian THR dan Gaji Ke-13 lengkap dengan 100% komponen Tunjangan Kinerja (Tukin).</p>
+                        </div>
+                        <a href="./PP_14_2024.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-amber-600 text-white font-bold rounded-lg transition">
+                            <span>📄</span> Download PDF
+                        </a>
+                    </div>
+
+                    <!-- File 4 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
+                        <div>
+                            <span class="px-2 py-0.5 bg-teal-100 text-teal-800 font-bold rounded text-[10px]">Aturan Hak Cuti</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">Peraturan BKN No. 7 Tahun 2022</h3>
+                            <p class="text-slate-600 mt-1">Pedoman teknis mengenai syarat dan tata cara pemberian Cuti Tahunan, Sakit, Melahirkan, dan Alasan Penting bagi PPPK.</p>
+                        </div>
+                        <a href="./Perba_BKN_7_2022.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-teal-600 text-white font-bold rounded-lg transition">
+                            <span>📄</span> Download PDF
+                        </a>
+                    </div>
+
+                    <!-- File 5 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
+                        <div>
+                            <span class="px-2 py-0.5 bg-rose-100 text-rose-800 font-bold rounded text-[10px]">Kedisiplinan & Jam Kerja</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">Permensos No. 6 Tahun 2023</h3>
+                            <p class="text-slate-600 mt-1">Mengatur sistem absensi, e-Kinerja, serta persentase pemotongan Tukin harian jika mangkir atau terlambat.</p>
+                        </div>
+                        <a href="./Permensos_6_2023.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-rose-600 text-white font-bold rounded-lg transition">
+                            <span>📄</span> Download PDF
+                        </a>
+                    </div>
+
+                    <!-- File 6 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between space-y-3 hover:shadow-md transition">
+                        <div>
+                            <span class="px-2 py-0.5 bg-purple-100 text-purple-800 font-bold rounded text-[10px]">Struktur & SOTK UPT</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-2">Permensos No. 7 Tahun 2025</h3>
+                            <p class="text-slate-600 mt-1">Susunan Organisasi dan Tata Kerja (SOTK) UPT Sekolah Rakyat, mencakup kedudukan hierarki pengasuhan dan atasan langsung.</p>
+                        </div>
+                        <a href="./Permensos_7_2025.pdf" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 hover:bg-purple-600 text-white font-bold rounded-lg transition">
+                            <span>📄</span> Download PDF
+                        </a>
+                    </div>
+
+                </div>
+                <div class="bg-amber-100/50 p-3 rounded-xl border border-amber-200 text-[10px] text-amber-900 text-center">
+                    💡 <strong>Cara Penggunaan:</strong> Pastikan Anda telah menaruh file PDF dengan nama yang sesuai di dalam folder GitHub/Server yang sama dengan file HTML ini. Tombol akan otomatis membuka dokumen pada tab baru browser.
+                </div>
             </section>
         </div>
 
@@ -1178,7 +1299,7 @@
             }
         }
 
-        const topics = [
+     const topics = [
             { key: 'atasan langsung', title: 'Atasan Langsung Wali Asrama (Kasubag TU)', page: 'struktur-org', info: 'Kasubag TU / Ketua Tim Operasional adalah Penilai SKP, e-Kinerja, dan persetujuan Cuti harian Wali Asrama.' },
             { key: 'struktur organisasi', title: 'Struktur Organisasi & SOTK UPT SR', page: 'struktur-org', info: 'Bagan komando Kepala UPT → Kasubag TU → Wali Asrama (PPPK Gol IX) → Wali Asuh → Siswa.' },
             { key: 'permensos 1/2025', title: 'Permensos No. 1 Tahun 2025 (Pembaruan Jabatan & Kelas Jabatan)', page: 'kelas-jabatan', info: 'Aturan pembaruan kelas jabatan Kemensos, jenjang JF Peksos/PenyiSos & aturan transisi 5 tahun Pasal 7.' },
@@ -1189,7 +1310,11 @@
             { key: 'tukin', title: 'Tunjangan Kinerja (Tukin) Class 7, 6, & 5', page: 'kalkulator', info: 'Tukin Kemensos Class 7 sebesar Rp 3.915.950, Class 6 Rp 3.510.400, dan Class 5 Rp 3.134.250 dibayar 100% berdasarkan e-Kinerja.' },
             { key: 'cuti', title: 'Ketentuan & Hak Cuti PPPK', page: 'matriks-cuti', info: 'Cuti Tahunan (12 hari) butuh 1 thn kerja, Cuti Sakit & Melahirkan berhak langsung.' },
             { key: 'mangkir', title: 'Sanksi Absensi Mangkir Kerja', page: 'disiplin', info: 'Mangkir dikenakan potongan Tukin 3% per hari. 10 hari beruntun ancaman PHK.' },
-            { key: 'shift', title: 'Pola Piket Shift Roster 24/7', page: 'operasional', info: 'Pengawasan asrama dibagi 4 shift (Pagi, Siang, Malam, Off Roster) rasio 1:25.' }
+            { key: 'shift', title: 'Pola Piket Shift Roster 24/7', page: 'operasional', info: 'Pengawasan asrama dibagi 4 shift (Pagi, Siang, Malam, Off Roster) rasio 1:25.' },
+            { key: 'thr', title: 'Komponen THR & Gaji 13 PPPK', page: 'kalkulator', info: 'Berdasarkan PP 14/2024, THR & Gaji 13 mencakup 100% Gaji Pokok, Tunj. Keluarga, Tunj. Pangan, dan 100% Tukin.' },
+            { key: 'gaji 13', title: 'Komponen THR & Gaji 13 PPPK', page: 'kalkulator', info: 'Berdasarkan PP 14/2024, THR & Gaji 13 mencakup 100% Gaji Pokok, Tunj. Keluarga, Tunj. Pangan, dan 100% Tukin.' },
+            { key: 'pdf', title: 'Download File PDF Peraturan', page: 'sumber-hukum', info: 'Unduh file lengkap Perpres Gaji, PP THR, Permensos Tukin, dan Peraturan BKN soal Cuti.' },
+            { key: 'sumber hukum', title: 'Download File PDF Peraturan', page: 'sumber-hukum', info: 'Unduh file lengkap Perpres Gaji, PP THR, Permensos Tukin, dan Peraturan BKN soal Cuti.' }
         ];
 
         function handleSearch() {
